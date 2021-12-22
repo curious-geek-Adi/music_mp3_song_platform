@@ -54,7 +54,7 @@ function validate2(){
     let regExp=new RegExp("^[A-Za-z]*$");
     console.log(regExp.test(lname));
     if(lname==''){
-        tdNode2.text("* please put your Lirst name");
+        tdNode2.text("* please put your Last name");
         lnameNode.css('border',border1);
         return false;
     }
@@ -93,7 +93,7 @@ function validate4(){
     let regExp=new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])");
     console.log(regExp.test(password));
     if(password==''){
-        tdNode4.text("This Field is required");
+        tdNode4.text("* Please put Your password");
         passNode.css('border',border1);
         return false;
     }
@@ -150,7 +150,7 @@ function validate6(){
     console.log(ss);
     // vina123@s
     if(emailId==''){
-        tdNode6.text("* please put your First name");
+        tdNode6.text("* please put your Emai-id");
         emailNode.css('border',border1);
         return false;
     }
@@ -169,7 +169,7 @@ function validate7(){
     let mobileNumber=mobileNode.val();
     let regExp=new RegExp("^[0-9]*$");
     if(mobileNumber==''){
-        tdNode7.text("* please put your Mobile NUmber");
+        tdNode7.text("* please put your Mobile Number");
         mobileNode.css('border',border1);
         return false;
     }
@@ -193,7 +193,7 @@ function validate8(){
     tdNode8.text("");
     let age=ageNode.val();
     if(age==''){
-        tdNode8.text("* please put your age");
+        tdNode8.text("* please put your age  (14+) mandatory");
         ageNode.css('border',border1);
         return false;
     }
